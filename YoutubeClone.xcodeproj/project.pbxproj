@@ -16,6 +16,16 @@
 		61A81D242931657B003FAEBB /* PlayListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D232931657B003FAEBB /* PlayListModel.swift */; };
 		61A81D272931794F003FAEBB /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D262931794F003FAEBB /* RootPageViewController.swift */; };
 		61A81D2929317970003FAEBB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D2829317970003FAEBB /* MainViewController.swift */; };
+		61A81D3129317CE5003FAEBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D2F29317CE5003FAEBB /* HomeViewController.swift */; };
+		61A81D3229317CE5003FAEBB /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A81D3029317CE5003FAEBB /* HomeViewController.xib */; };
+		61A81D3629317D05003FAEBB /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D3429317D05003FAEBB /* VideosViewController.swift */; };
+		61A81D3729317D05003FAEBB /* VideosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A81D3529317D05003FAEBB /* VideosViewController.xib */; };
+		61A81D3C29317D48003FAEBB /* PlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D3A29317D48003FAEBB /* PlaylistsViewController.swift */; };
+		61A81D3D29317D48003FAEBB /* PlaylistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A81D3B29317D48003FAEBB /* PlaylistsViewController.xib */; };
+		61A81D4029317D63003FAEBB /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D3E29317D63003FAEBB /* ChannelViewController.swift */; };
+		61A81D4129317D63003FAEBB /* ChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A81D3F29317D63003FAEBB /* ChannelViewController.xib */; };
+		61A81D4429317D77003FAEBB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D4229317D77003FAEBB /* AboutViewController.swift */; };
+		61A81D4529317D77003FAEBB /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A81D4329317D77003FAEBB /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +40,16 @@
 		61A81D232931657B003FAEBB /* PlayListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListModel.swift; sourceTree = "<group>"; };
 		61A81D262931794F003FAEBB /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		61A81D2829317970003FAEBB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		61A81D2F29317CE5003FAEBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		61A81D3029317CE5003FAEBB /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		61A81D3429317D05003FAEBB /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		61A81D3529317D05003FAEBB /* VideosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideosViewController.xib; sourceTree = "<group>"; };
+		61A81D3A29317D48003FAEBB /* PlaylistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsViewController.swift; sourceTree = "<group>"; };
+		61A81D3B29317D48003FAEBB /* PlaylistsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistsViewController.xib; sourceTree = "<group>"; };
+		61A81D3E29317D63003FAEBB /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		61A81D3F29317D63003FAEBB /* ChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewController.xib; sourceTree = "<group>"; };
+		61A81D4229317D77003FAEBB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		61A81D4329317D77003FAEBB /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +82,11 @@
 		18FD24C42819BF2B00DCF973 /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				61A81D2E29317C72003FAEBB /* About */,
+				61A81D2D29317C6C003FAEBB /* Channel */,
+				61A81D2C29317C5D003FAEBB /* Playlists */,
+				61A81D2B29317C54003FAEBB /* Videos */,
+				61A81D2A29317C4B003FAEBB /* Home */,
 				61A81D2529317927003FAEBB /* Main */,
 				61A81D2229316539003FAEBB /* Model */,
 				18FD24C52819BF2B00DCF973 /* AppDelegate.swift */,
@@ -90,6 +115,51 @@
 				61A81D2829317970003FAEBB /* MainViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		61A81D2A29317C4B003FAEBB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				61A81D2F29317CE5003FAEBB /* HomeViewController.swift */,
+				61A81D3029317CE5003FAEBB /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		61A81D2B29317C54003FAEBB /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				61A81D3429317D05003FAEBB /* VideosViewController.swift */,
+				61A81D3529317D05003FAEBB /* VideosViewController.xib */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		61A81D2C29317C5D003FAEBB /* Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				61A81D3A29317D48003FAEBB /* PlaylistsViewController.swift */,
+				61A81D3B29317D48003FAEBB /* PlaylistsViewController.xib */,
+			);
+			path = Playlists;
+			sourceTree = "<group>";
+		};
+		61A81D2D29317C6C003FAEBB /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				61A81D3E29317D63003FAEBB /* ChannelViewController.swift */,
+				61A81D3F29317D63003FAEBB /* ChannelViewController.xib */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		61A81D2E29317C72003FAEBB /* About */ = {
+			isa = PBXGroup;
+			children = (
+				61A81D4229317D77003FAEBB /* AboutViewController.swift */,
+				61A81D4329317D77003FAEBB /* AboutViewController.xib */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +220,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A81D3D29317D48003FAEBB /* PlaylistsViewController.xib in Resources */,
 				18FD24D22819BF2E00DCF973 /* LaunchScreen.storyboard in Resources */,
+				61A81D4529317D77003FAEBB /* AboutViewController.xib in Resources */,
 				18FD24CF2819BF2E00DCF973 /* Assets.xcassets in Resources */,
+				61A81D3729317D05003FAEBB /* VideosViewController.xib in Resources */,
 				18FD24CD2819BF2B00DCF973 /* Main.storyboard in Resources */,
+				61A81D3229317CE5003FAEBB /* HomeViewController.xib in Resources */,
+				61A81D4129317D63003FAEBB /* ChannelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,9 +240,14 @@
 			files = (
 				18FD24CA2819BF2B00DCF973 /* ViewController.swift in Sources */,
 				61A81D242931657B003FAEBB /* PlayListModel.swift in Sources */,
+				61A81D4429317D77003FAEBB /* AboutViewController.swift in Sources */,
 				61A81D272931794F003FAEBB /* RootPageViewController.swift in Sources */,
 				61A81D2929317970003FAEBB /* MainViewController.swift in Sources */,
+				61A81D4029317D63003FAEBB /* ChannelViewController.swift in Sources */,
+				61A81D3C29317D48003FAEBB /* PlaylistsViewController.swift in Sources */,
 				18FD24C62819BF2B00DCF973 /* AppDelegate.swift in Sources */,
+				61A81D3129317CE5003FAEBB /* HomeViewController.swift in Sources */,
+				61A81D3629317D05003FAEBB /* VideosViewController.swift in Sources */,
 				18FD24C82819BF2B00DCF973 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
