@@ -26,6 +26,15 @@
 		61A81D4129317D63003FAEBB /* ChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A81D3F29317D63003FAEBB /* ChannelViewController.xib */; };
 		61A81D4429317D77003FAEBB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D4229317D77003FAEBB /* AboutViewController.swift */; };
 		61A81D4529317D77003FAEBB /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61A81D4329317D77003FAEBB /* AboutViewController.xib */; };
+		61F0889629355A5700218796 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0889529355A5700218796 /* ServiceLayer.swift */; };
+		61F0889829355A6B00218796 /* NetworError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0889729355A6B00218796 /* NetworError.swift */; };
+		61F0889A29355A9300218796 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0889929355A9300218796 /* RequestModel.swift */; };
+		61F0889D29355BE900218796 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F0889C29355BE900218796 /* Constants.swift */; };
+		61F088A32935620900218796 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F088A22935620900218796 /* HomeProvider.swift */; };
+		61F088A52935642E00218796 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F088A42935642E00218796 /* ChannelModel.swift */; };
+		61F088A72935645600218796 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F088A62935645600218796 /* VideoModel.swift */; };
+		61F088A92935647F00218796 /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F088A82935647F00218796 /* PlaylistItemsModel.swift */; };
+		61F088AB2935661700218796 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F088AA2935661700218796 /* HomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +59,15 @@
 		61A81D3F29317D63003FAEBB /* ChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewController.xib; sourceTree = "<group>"; };
 		61A81D4229317D77003FAEBB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		61A81D4329317D77003FAEBB /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		61F0889529355A5700218796 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		61F0889729355A6B00218796 /* NetworError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworError.swift; sourceTree = "<group>"; };
+		61F0889929355A9300218796 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		61F0889C29355BE900218796 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		61F088A22935620900218796 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		61F088A42935642E00218796 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
+		61F088A62935645600218796 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		61F088A82935647F00218796 /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
+		61F088AA2935661700218796 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +100,8 @@
 		18FD24C42819BF2B00DCF973 /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				61F0889B29355BD700218796 /* Utils */,
+				61F0889429355A2200218796 /* ServiceLayer */,
 				61A81D2E29317C72003FAEBB /* About */,
 				61A81D2D29317C6C003FAEBB /* Channel */,
 				61A81D2C29317C5D003FAEBB /* Playlists */,
@@ -104,6 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				61A81D232931657B003FAEBB /* PlayListModel.swift */,
+				61F088A42935642E00218796 /* ChannelModel.swift */,
+				61F088A62935645600218796 /* VideoModel.swift */,
+				61F088A82935647F00218796 /* PlaylistItemsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,8 +143,9 @@
 		61A81D2A29317C4B003FAEBB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				61A81D2F29317CE5003FAEBB /* HomeViewController.swift */,
-				61A81D3029317CE5003FAEBB /* HomeViewController.xib */,
+				61F088A0293561D200218796 /* Presenter */,
+				61F0889F293561CC00218796 /* View */,
+				61F0889E293561C400218796 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -160,6 +184,57 @@
 				61A81D4329317D77003FAEBB /* AboutViewController.xib */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		61F0889429355A2200218796 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				61F0889529355A5700218796 /* ServiceLayer.swift */,
+				61F0889729355A6B00218796 /* NetworError.swift */,
+				61F0889929355A9300218796 /* RequestModel.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		61F0889B29355BD700218796 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				61F0889C29355BE900218796 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		61F0889E293561C400218796 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61F088A1293561F500218796 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61F0889F293561CC00218796 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61A81D2F29317CE5003FAEBB /* HomeViewController.swift */,
+				61A81D3029317CE5003FAEBB /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61F088A0293561D200218796 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				61F088AA2935661700218796 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		61F088A1293561F500218796 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				61F088A22935620900218796 /* HomeProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,14 +314,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FD24CA2819BF2B00DCF973 /* ViewController.swift in Sources */,
+				61F088A32935620900218796 /* HomeProvider.swift in Sources */,
+				61F088A92935647F00218796 /* PlaylistItemsModel.swift in Sources */,
+				61F088AB2935661700218796 /* HomePresenter.swift in Sources */,
 				61A81D242931657B003FAEBB /* PlayListModel.swift in Sources */,
 				61A81D4429317D77003FAEBB /* AboutViewController.swift in Sources */,
+				61F0889829355A6B00218796 /* NetworError.swift in Sources */,
 				61A81D272931794F003FAEBB /* RootPageViewController.swift in Sources */,
+				61F0889D29355BE900218796 /* Constants.swift in Sources */,
 				61A81D2929317970003FAEBB /* MainViewController.swift in Sources */,
 				61A81D4029317D63003FAEBB /* ChannelViewController.swift in Sources */,
 				61A81D3C29317D48003FAEBB /* PlaylistsViewController.swift in Sources */,
+				61F088A52935642E00218796 /* ChannelModel.swift in Sources */,
+				61F0889629355A5700218796 /* ServiceLayer.swift in Sources */,
 				18FD24C62819BF2B00DCF973 /* AppDelegate.swift in Sources */,
+				61F088A72935645600218796 /* VideoModel.swift in Sources */,
 				61A81D3129317CE5003FAEBB /* HomeViewController.swift in Sources */,
+				61F0889A29355A9300218796 /* RequestModel.swift in Sources */,
 				61A81D3629317D05003FAEBB /* VideosViewController.swift in Sources */,
 				18FD24C82819BF2B00DCF973 /* SceneDelegate.swift in Sources */,
 			);
