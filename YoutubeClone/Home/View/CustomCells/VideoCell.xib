@@ -54,7 +54,7 @@
                         <color key="backgroundColor" name="backgroundColor"/>
                     </stackView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dots" translatesAutoresizingMaskIntoConstraints="NO" id="jF4-Md-K6w">
-                        <rect key="frame" x="348" y="0.0" width="13" height="13"/>
+                        <rect key="frame" x="356" y="0.0" width="13" height="13"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="13" id="Ysg-QA-dP8"/>
                             <constraint firstAttribute="height" constant="13" id="Zp0-WZ-LTj"/>
@@ -63,7 +63,7 @@
                 </subviews>
                 <color key="backgroundColor" name="backgroundColor"/>
                 <constraints>
-                    <constraint firstItem="jF4-Md-K6w" firstAttribute="trailing" secondItem="crk-9N-Ocb" secondAttribute="trailing" id="9Q2-9w-gnS"/>
+                    <constraint firstAttribute="trailing" secondItem="jF4-Md-K6w" secondAttribute="trailing" constant="6" id="csK-bS-qoF"/>
                     <constraint firstItem="ImI-tk-MSb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dwG-P3-x4Z"/>
                     <constraint firstAttribute="bottom" secondItem="ImI-tk-MSb" secondAttribute="bottom" constant="14" id="fdf-MU-Jg8"/>
                     <constraint firstItem="ImI-tk-MSb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="kQC-Ag-dDQ"/>

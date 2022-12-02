@@ -1,21 +1,126 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlaylistCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="290" id="KGk-i7-Jjw" customClass="PlaylistCell" customModule="YoutubeClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="290"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="404" height="290"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maxresdefault" translatesAutoresizingMaskIntoConstraints="NO" id="7Qu-SZ-AUR">
+                        <rect key="frame" x="13" y="0.0" width="378" height="195"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="195" id="tXB-ph-xAP"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hBx-Ti-FdU">
+                        <rect key="frame" x="13" y="195" width="378" height="37"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manejo de memoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkh-sr-j0c">
+                                <rect key="frame" x="0.0" y="0.0" width="378" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" name="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4b-Pn-ITM">
+                                <rect key="frame" x="0.0" y="20" width="378" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" name="grayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhR-SV-CED">
+                        <rect key="frame" x="241" y="0.0" width="150" height="195"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C78-f6-MEE">
+                                <rect key="frame" x="60" y="74.5" width="30" height="46"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgS-yj-iDg">
+                                        <rect key="frame" x="7" y="0.0" width="16" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text.alignleft" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JZi-m2-wed">
+                                        <rect key="frame" x="5" y="27.5" width="20" height="16.5"/>
+                                        <color key="tintColor" name="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Dsb-VV-TJN"/>
+                                            <constraint firstAttribute="height" constant="20" id="nsE-1p-a6L"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="X91-NP-lWV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.88495317673841056" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C78-f6-MEE" firstAttribute="centerX" secondItem="VhR-SV-CED" secondAttribute="centerX" id="4E4-r9-obU"/>
+                            <constraint firstItem="C78-f6-MEE" firstAttribute="centerY" secondItem="VhR-SV-CED" secondAttribute="centerY" id="kqZ-Kr-CNc"/>
+                            <constraint firstAttribute="width" constant="150" id="nnJ-oz-DOj"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dots" translatesAutoresizingMaskIntoConstraints="NO" id="TGL-zp-HxO">
+                        <rect key="frame" x="385" y="207" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="iNP-L4-Kor"/>
+                            <constraint firstAttribute="width" constant="13" id="jX8-Kl-Jcn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TGL-zp-HxO" secondAttribute="trailing" constant="6" id="2LI-3c-8wy"/>
+                    <constraint firstItem="hBx-Ti-FdU" firstAttribute="width" secondItem="7Qu-SZ-AUR" secondAttribute="width" id="6RC-3f-epO"/>
+                    <constraint firstItem="7Qu-SZ-AUR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Cfr-k7-Dl3"/>
+                    <constraint firstItem="hBx-Ti-FdU" firstAttribute="centerX" secondItem="7Qu-SZ-AUR" secondAttribute="centerX" id="Csd-vW-gkN"/>
+                    <constraint firstAttribute="bottom" secondItem="hBx-Ti-FdU" secondAttribute="bottom" constant="58" id="E4e-06-krs"/>
+                    <constraint firstItem="VhR-SV-CED" firstAttribute="trailing" secondItem="7Qu-SZ-AUR" secondAttribute="trailing" id="IGl-V8-YwP"/>
+                    <constraint firstItem="e4b-Pn-ITM" firstAttribute="width" secondItem="7Qu-SZ-AUR" secondAttribute="width" id="Tgf-ry-hjV"/>
+                    <constraint firstAttribute="trailing" secondItem="7Qu-SZ-AUR" secondAttribute="trailing" constant="13" id="Uue-NB-X6b"/>
+                    <constraint firstItem="7Qu-SZ-AUR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hLl-am-2tc"/>
+                    <constraint firstItem="VhR-SV-CED" firstAttribute="height" secondItem="7Qu-SZ-AUR" secondAttribute="height" id="ooP-0L-jSR"/>
+                    <constraint firstItem="VhR-SV-CED" firstAttribute="centerY" secondItem="7Qu-SZ-AUR" secondAttribute="centerY" id="syo-sQ-lS9"/>
+                    <constraint firstItem="TGL-zp-HxO" firstAttribute="centerY" secondItem="hBx-Ti-FdU" secondAttribute="centerY" id="szX-Fg-yVB"/>
+                    <constraint firstItem="hBx-Ti-FdU" firstAttribute="top" secondItem="7Qu-SZ-AUR" secondAttribute="bottom" id="ubZ-E3-ewL"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <connections>
+                <outlet property="dotsImage" destination="TGL-zp-HxO" id="hac-Sk-dEK"/>
+                <outlet property="videoCount" destination="e4b-Pn-ITM" id="UeF-46-Jru"/>
+                <outlet property="videoCountOverlay" destination="hgS-yj-iDg" id="0KK-IP-0UO"/>
+                <outlet property="videoImage" destination="7Qu-SZ-AUR" id="vgZ-fC-TDR"/>
+                <outlet property="videoTitle" destination="rkh-sr-j0c" id="Qnw-3U-NEL"/>
+            </connections>
+            <point key="canvasLocation" x="192.75362318840581" y="145.98214285714286"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="dots" width="256" height="256"/>
+        <image name="maxresdefault" width="1280" height="720"/>
+        <image name="text.alignleft" catalog="system" width="128" height="100"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayColor">
+            <color red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteColor">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
