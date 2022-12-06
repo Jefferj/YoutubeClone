@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottonSheetViewController" customModule="YoutubeClone" customModuleProvider="target">
+            <connections>
+                <outlet property="optionContainer" destination="dJz-ZV-SwR" id="gzN-ei-klC"/>
+                <outlet property="overlayView" destination="10f-me-1Wq" id="WqT-Ul-FbO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10f-me-1Wq">
+                    <rect key="frame" x="0.0" y="143" width="414" height="250"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Rl4-Pj-C83">
+                            <rect key="frame" x="20" y="0.0" width="374" height="250"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mgf-KR-lAb">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oRe-XP-kRd">
+                                            <rect key="frame" x="0.0" y="0.5" width="25" height="49"/>
+                                            <color key="tintColor" name="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="Q6K-z8-Qxc"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save to Watch later" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agx-SS-skR">
+                                            <rect key="frame" x="35" y="0.0" width="339" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="whiteColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c9N-tt-l9P">
+                                    <rect key="frame" x="0.0" y="50" width="374" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.rectangle.on.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Im-Rl-O3l">
+                                            <rect key="frame" x="0.0" y="0.5" width="25" height="49"/>
+                                            <color key="tintColor" name="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="pye-wj-Fhf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save to playlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oh-SZ-pr7">
+                                            <rect key="frame" x="35" y="0.0" width="339" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="whiteColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-9P-lpJ">
+                                    <rect key="frame" x="0.0" y="100" width="374" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.to.line" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CHn-5O-9Td">
+                                            <rect key="frame" x="0.0" y="0.0" width="25" height="49.5"/>
+                                            <color key="tintColor" name="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="jIH-sV-29b"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK8-gn-xH4">
+                                            <rect key="frame" x="35" y="0.0" width="339" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="whiteColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aVw-qZ-TnE">
+                                    <rect key="frame" x="0.0" y="150" width="374" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.turn.up.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9h3-QA-uuX">
+                                            <rect key="frame" x="0.0" y="1" width="25" height="47.5"/>
+                                            <color key="tintColor" name="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="aWi-bY-gZm"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEq-Lx-Tl1">
+                                            <rect key="frame" x="35" y="0.0" width="339" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="whiteColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2tp-dB-WqK">
+                                    <rect key="frame" x="0.0" y="200" width="374" height="50"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.app" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j1G-9Z-ran">
+                                            <rect key="frame" x="0.0" y="1" width="25" height="47.5"/>
+                                            <color key="tintColor" name="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="V8h-rh-N6M"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LE3-24-q6l">
+                                            <rect key="frame" x="35" y="0.0" width="339" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" name="whiteColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="backgroundColor"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Rl4-Pj-C83" secondAttribute="trailing" constant="20" id="Fht-3c-5x1"/>
+                        <constraint firstAttribute="height" constant="250" id="Td1-My-fCE"/>
+                        <constraint firstItem="Rl4-Pj-C83" firstAttribute="leading" secondItem="10f-me-1Wq" secondAttribute="leading" constant="20" id="qEg-jW-z5k"/>
+                        <constraint firstAttribute="bottom" secondItem="Rl4-Pj-C83" secondAttribute="bottom" id="qKn-pW-bz4"/>
+                        <constraint firstItem="Rl4-Pj-C83" firstAttribute="top" secondItem="10f-me-1Wq" secondAttribute="top" id="qtO-ge-PMe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJz-ZV-SwR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="393"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.12628618455091059" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="whiteColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="10f-me-1Wq" secondAttribute="trailing" id="4kN-He-kZT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="10f-me-1Wq" secondAttribute="bottom" id="bVm-PL-2zH"/>
+                <constraint firstItem="10f-me-1Wq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f10-uS-xmo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dJz-ZV-SwR" secondAttribute="bottom" id="f1i-Sd-wKZ"/>
+                <constraint firstItem="dJz-ZV-SwR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hSy-d1-oOB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dJz-ZV-SwR" secondAttribute="trailing" id="u0s-8H-oEd"/>
+                <constraint firstItem="dJz-ZV-SwR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="w2S-at-Rn8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="44.927536231884062" y="-185.15625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.down.to.line" catalog="system" width="111" height="128"/>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="play.rectangle.on.rectangle" catalog="system" width="128" height="97"/>
+        <image name="xmark.app" catalog="system" width="128" height="114"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteColor">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

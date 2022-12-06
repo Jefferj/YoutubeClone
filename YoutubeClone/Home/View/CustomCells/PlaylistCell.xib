@@ -80,18 +80,30 @@
                             <constraint firstAttribute="width" constant="13" id="jX8-Kl-Jcn"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMT-In-GU3">
+                        <rect key="frame" x="385" y="207" width="13" height="13"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="dotsButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VyJ-FK-jqz"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="EMT-In-GU3" firstAttribute="width" secondItem="TGL-zp-HxO" secondAttribute="width" id="19m-Mg-7CA"/>
                     <constraint firstAttribute="trailing" secondItem="TGL-zp-HxO" secondAttribute="trailing" constant="6" id="2LI-3c-8wy"/>
+                    <constraint firstItem="EMT-In-GU3" firstAttribute="height" secondItem="TGL-zp-HxO" secondAttribute="height" id="3Sw-Nc-am8"/>
                     <constraint firstItem="hBx-Ti-FdU" firstAttribute="width" secondItem="7Qu-SZ-AUR" secondAttribute="width" id="6RC-3f-epO"/>
                     <constraint firstItem="7Qu-SZ-AUR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Cfr-k7-Dl3"/>
                     <constraint firstItem="hBx-Ti-FdU" firstAttribute="centerX" secondItem="7Qu-SZ-AUR" secondAttribute="centerX" id="Csd-vW-gkN"/>
                     <constraint firstAttribute="bottom" secondItem="hBx-Ti-FdU" secondAttribute="bottom" constant="58" id="E4e-06-krs"/>
                     <constraint firstItem="VhR-SV-CED" firstAttribute="trailing" secondItem="7Qu-SZ-AUR" secondAttribute="trailing" id="IGl-V8-YwP"/>
+                    <constraint firstItem="EMT-In-GU3" firstAttribute="centerY" secondItem="TGL-zp-HxO" secondAttribute="centerY" id="P5D-yY-SHZ"/>
                     <constraint firstItem="e4b-Pn-ITM" firstAttribute="width" secondItem="7Qu-SZ-AUR" secondAttribute="width" id="Tgf-ry-hjV"/>
                     <constraint firstAttribute="trailing" secondItem="7Qu-SZ-AUR" secondAttribute="trailing" constant="13" id="Uue-NB-X6b"/>
                     <constraint firstItem="7Qu-SZ-AUR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hLl-am-2tc"/>
                     <constraint firstItem="VhR-SV-CED" firstAttribute="height" secondItem="7Qu-SZ-AUR" secondAttribute="height" id="ooP-0L-jSR"/>
+                    <constraint firstItem="EMT-In-GU3" firstAttribute="centerX" secondItem="TGL-zp-HxO" secondAttribute="centerX" id="qnC-4w-i3d"/>
                     <constraint firstItem="VhR-SV-CED" firstAttribute="centerY" secondItem="7Qu-SZ-AUR" secondAttribute="centerY" id="syo-sQ-lS9"/>
                     <constraint firstItem="TGL-zp-HxO" firstAttribute="centerY" secondItem="hBx-Ti-FdU" secondAttribute="centerY" id="szX-Fg-yVB"/>
                     <constraint firstItem="hBx-Ti-FdU" firstAttribute="top" secondItem="7Qu-SZ-AUR" secondAttribute="bottom" id="ubZ-E3-ewL"/>
