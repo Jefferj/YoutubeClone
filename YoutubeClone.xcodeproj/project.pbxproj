@@ -22,6 +22,10 @@
 		616B58B5293FEC18004840A3 /* VideosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58B4293FEC18004840A3 /* VideosProvider.swift */; };
 		616B58B7293FEC24004840A3 /* VideosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58B6293FEC24004840A3 /* VideosPresenter.swift */; };
 		616B58B9293FF117004840A3 /* VideosProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58B8293FF117004840A3 /* VideosProviderMock.swift */; };
+		616B58BC293FF693004840A3 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58BB293FF693004840A3 /* UITableView+Extension.swift */; };
+		616B58BE293FF90F004840A3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58BD293FF90F004840A3 /* UIColor+Extension.swift */; };
+		616B58C0293FFACA004840A3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58BF293FFACA004840A3 /* UIImage+Extension.swift */; };
+		616B58C229400279004840A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58C129400279004840A3 /* BaseViewController.swift */; };
 		61761B74293FC05A00D14C22 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61761B73293FC05A00D14C22 /* UIView+Extension.swift */; };
 		61A81D242931657B003FAEBB /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D232931657B003FAEBB /* PlaylistModel.swift */; };
 		61A81D272931794F003FAEBB /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D262931794F003FAEBB /* RootPageViewController.swift */; };
@@ -76,6 +80,10 @@
 		616B58B6293FEC24004840A3 /* VideosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosPresenter.swift; sourceTree = "<group>"; };
 		616B58B8293FF117004840A3 /* VideosProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosProviderMock.swift; sourceTree = "<group>"; };
 		616B58BA293FF16A004840A3 /* VideoList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoList.json; sourceTree = "<group>"; };
+		616B58BB293FF693004840A3 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		616B58BD293FF90F004840A3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		616B58BF293FFACA004840A3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		616B58C129400279004840A3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		61761B73293FC05A00D14C22 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		61A81D232931657B003FAEBB /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
 		61A81D262931794F003FAEBB /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +232,10 @@
 			isa = PBXGroup;
 			children = (
 				61761B73293FC05A00D14C22 /* UIView+Extension.swift */,
+				616B58BB293FF693004840A3 /* UITableView+Extension.swift */,
+				616B58BD293FF90F004840A3 /* UIColor+Extension.swift */,
+				616B58BF293FFACA004840A3 /* UIImage+Extension.swift */,
+				616B58C129400279004840A3 /* BaseViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -522,12 +534,14 @@
 				61F088A32935620900218796 /* HomeProvider.swift in Sources */,
 				61F088A92935647F00218796 /* PlaylistItemsModel.swift in Sources */,
 				616B58B7293FEC24004840A3 /* VideosPresenter.swift in Sources */,
+				616B58C229400279004840A3 /* BaseViewController.swift in Sources */,
 				61F088AB2935661700218796 /* HomePresenter.swift in Sources */,
 				61A81D242931657B003FAEBB /* PlaylistModel.swift in Sources */,
 				6166FE6D29393EC500A8AAB9 /* ChannelCell.swift in Sources */,
 				61AAFA162936C741004E16C6 /* VideoCell.swift in Sources */,
 				616B58B5293FEC18004840A3 /* VideosProvider.swift in Sources */,
 				61A81D4429317D77003FAEBB /* AboutViewController.swift in Sources */,
+				616B58BC293FF693004840A3 /* UITableView+Extension.swift in Sources */,
 				61AAF9FE2936B6F2004E16C6 /* HomeProviderMock.swift in Sources */,
 				61AAFA012936B959004E16C6 /* Utils.swift in Sources */,
 				61F0889829355A6B00218796 /* NetworError.swift in Sources */,
@@ -537,6 +551,8 @@
 				61AAFA0E2936BF43004E16C6 /* MockManager.swift in Sources */,
 				616B58B9293FF117004840A3 /* VideosProviderMock.swift in Sources */,
 				61A81D2929317970003FAEBB /* MainViewController.swift in Sources */,
+				616B58BE293FF90F004840A3 /* UIColor+Extension.swift in Sources */,
+				616B58C0293FFACA004840A3 /* UIImage+Extension.swift in Sources */,
 				61A81D4029317D63003FAEBB /* ChannelViewController.swift in Sources */,
 				61A81D3C29317D48003FAEBB /* PlaylistsViewController.swift in Sources */,
 				61F088A52935642E00218796 /* ChannelModel.swift in Sources */,
