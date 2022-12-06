@@ -24,7 +24,7 @@ class BottonSheetViewController: UIViewController {
     
     @objc func didTapOverlay(_ sender: UITapGestureRecognizer){
         optionContainer.animateBottomSheet(show: false){
-            dismiss(animated: false)
+            self.dismiss(animated: false)
         }
     }
 }
