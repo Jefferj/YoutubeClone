@@ -60,14 +60,26 @@
                             <constraint firstAttribute="height" constant="13" id="Zp0-WZ-LTj"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8S-ia-S2w">
+                        <rect key="frame" x="356" y="0.0" width="13" height="13"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="dotsButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="c9x-Me-wU4"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" name="backgroundColor"/>
                 <constraints>
+                    <constraint firstItem="p8S-ia-S2w" firstAttribute="height" secondItem="jF4-Md-K6w" secondAttribute="height" id="Jzb-gX-mxp"/>
+                    <constraint firstItem="p8S-ia-S2w" firstAttribute="centerX" secondItem="jF4-Md-K6w" secondAttribute="centerX" id="NRl-Ni-YW9"/>
+                    <constraint firstItem="p8S-ia-S2w" firstAttribute="centerY" secondItem="jF4-Md-K6w" secondAttribute="centerY" id="YbZ-kK-MfM"/>
                     <constraint firstAttribute="trailing" secondItem="jF4-Md-K6w" secondAttribute="trailing" constant="6" id="csK-bS-qoF"/>
                     <constraint firstItem="ImI-tk-MSb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dwG-P3-x4Z"/>
                     <constraint firstAttribute="bottom" secondItem="ImI-tk-MSb" secondAttribute="bottom" constant="14" id="fdf-MU-Jg8"/>
                     <constraint firstItem="ImI-tk-MSb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="kQC-Ag-dDQ"/>
                     <constraint firstAttribute="trailing" secondItem="ImI-tk-MSb" secondAttribute="trailing" constant="14" id="oWv-o5-Mds"/>
+                    <constraint firstItem="p8S-ia-S2w" firstAttribute="width" secondItem="jF4-Md-K6w" secondAttribute="width" id="yJK-lU-OMY"/>
                     <constraint firstItem="jF4-Md-K6w" firstAttribute="top" secondItem="crk-9N-Ocb" secondAttribute="top" id="z5N-Tg-7r8"/>
                 </constraints>
             </tableViewCellContentView>

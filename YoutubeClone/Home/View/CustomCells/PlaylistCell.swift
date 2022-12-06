@@ -9,6 +9,8 @@ import UIKit
 import Kingfisher
 
 class PlaylistCell: UITableViewCell {
+    
+    var didTapDostsButton: (()->Void)?
 
     @IBOutlet weak var dotsImage: UIImageView!
     @IBOutlet weak var videoCountOverlay: UILabel!
@@ -26,6 +28,11 @@ class PlaylistCell: UITableViewCell {
         dotsImage.tintColor = UIColor(named: "whiteColor")
     }
     
+    @IBAction func dotsButtonTapped(_ sender: Any) {
+        if let tap = didTapDostsButton{
+            tap()
+        }
+    }
     func configCell(model: PlaylistModel.Item){
         videoTitle.text = model.snippet.title
         videoCount.text = String(model.contentDetails.itemCount)+" videos"
