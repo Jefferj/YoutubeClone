@@ -24,8 +24,11 @@
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tw6-5w-h8c" customClass="TabsView" customModule="YoutubeClone" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="89" width="414" height="128"/>
+                                <rect key="frame" x="0.0" y="172" width="414" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BJN-5q-oaD"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -35,12 +38,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FOy-do-edj" secondAttribute="bottom" id="NbQ-BI-sZ0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tw6-5w-h8c" secondAttribute="bottom" constant="645" id="TPH-gR-ise"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FOy-do-edj" secondAttribute="trailing" id="acj-c8-Qc1"/>
+                            <constraint firstItem="Tw6-5w-h8c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bM7-ur-3bY"/>
                             <constraint firstItem="FOy-do-edj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dLh-cu-Aqi"/>
                             <constraint firstItem="FOy-do-edj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ke9-sW-Qby"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tw6-5w-h8c" secondAttribute="trailing" id="xMq-1a-Aks"/>
-                            <constraint firstItem="Tw6-5w-h8c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="ynY-7f-ULW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tabsView" destination="Tw6-5w-h8c" id="CdN-0b-xtx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
