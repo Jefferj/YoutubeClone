@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct RequestModel  {
     let endpoint : Endpoints
     var queryItems : [String:String]?
@@ -24,8 +25,9 @@ struct RequestModel  {
     enum Endpoints : String   {
         case search = "/search"
         case channels = "/channels"
-        case playlist = "/playlist"
+        case playlist = "/playlists"
         case playlistItems = "/playlistItems"
+        case videos = "/videos"
         case empty = ""
     }
 
