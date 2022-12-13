@@ -29,6 +29,7 @@
 		616B58BE293FF90F004840A3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58BD293FF90F004840A3 /* UIColor+Extension.swift */; };
 		616B58C0293FFACA004840A3 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58BF293FFACA004840A3 /* UIImage+Extension.swift */; };
 		616B58C229400279004840A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616B58C129400279004840A3 /* BaseViewController.swift */; };
+		61728E522948E8F800E1A1AD /* ButtonsIconList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61728E512948E8F800E1A1AD /* ButtonsIconList.swift */; };
 		61761B74293FC05A00D14C22 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61761B73293FC05A00D14C22 /* UIView+Extension.swift */; };
 		61A81D242931657B003FAEBB /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D232931657B003FAEBB /* PlaylistModel.swift */; };
 		61A81D272931794F003FAEBB /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A81D262931794F003FAEBB /* RootPageViewController.swift */; };
@@ -99,6 +100,7 @@
 		616B58BD293FF90F004840A3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		616B58BF293FFACA004840A3 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		616B58C129400279004840A3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		61728E512948E8F800E1A1AD /* ButtonsIconList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsIconList.swift; sourceTree = "<group>"; };
 		61761B73293FC05A00D14C22 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		61A81D232931657B003FAEBB /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
 		61A81D262931794F003FAEBB /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
@@ -271,6 +273,14 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
+		61728E502948E8DC00E1A1AD /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				61728E512948E8F800E1A1AD /* ButtonsIconList.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		61761B72293FC03C00D14C22 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +401,7 @@
 		61DFA6F42947B40B0040FEC8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				61728E502948E8DC00E1A1AD /* CustomViews */,
 				61DFA7042947D3310040FEC8 /* Cells */,
 				61DFA6F82947CC500040FEC8 /* PlayVideoViewController.swift */,
 				61DFA6F92947CC500040FEC8 /* PlayVideoViewController.xib */,
@@ -647,6 +658,7 @@
 				61AAFA162936C741004E16C6 /* VideoCell.swift in Sources */,
 				61DFA6FA2947CC500040FEC8 /* PlayVideoViewController.swift in Sources */,
 				616B58B5293FEC18004840A3 /* VideosProvider.swift in Sources */,
+				61728E522948E8F800E1A1AD /* ButtonsIconList.swift in Sources */,
 				61A81D4429317D77003FAEBB /* AboutViewController.swift in Sources */,
 				616B58BC293FF693004840A3 /* UITableView+Extension.swift in Sources */,
 				61DFA7012947D0290040FEC8 /* PlayVideoProvider.swift in Sources */,
